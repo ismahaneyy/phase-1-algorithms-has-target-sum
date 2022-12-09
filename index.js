@@ -1,5 +1,12 @@
 function hasTargetSum(array, target) {
   // Write your algorithm here
+  	for(i=0; i < array.length; i++){
+		let comp = array.splice(0, 1); 
+		if(array.includes(target-comp)){
+			return true
+		}
+	}
+	return false
 }
 
 /* 
